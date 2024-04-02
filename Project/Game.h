@@ -3,10 +3,10 @@
 
 
 
-const int SIZE = 4;                                // Размер игрового поля в плашках
-const int ARRAY_SIZE = SIZE * SIZE;                // Размер массива
-const int  FIELD_SIZE = 500;                       // Размер игрового поля в пикселях
-const int CELL_SIZE = 120;                         // Размер плашки в пикселях
+const int SIZE = 4;                                //  Size of the playing field in tiles
+const int ARRAY_SIZE = SIZE * SIZE;                // Array size
+const int  FIELD_SIZE = 500;                       // Size of the playing field in pixels
+const int CELL_SIZE = 120;                         // Plot size in pixels
 
 enum class Direction { Left = 0, Right = 1, Up = 2, Down = 3 };
 
