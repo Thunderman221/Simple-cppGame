@@ -4,18 +4,17 @@
 
 int main()
 {
-// creating a window of 600 by 600 and 60 fps
+// Creating a window of 600 by 600 and 60 fps
 sf::RenderWindow window(sf::VideoMode(600, 600), "Project");
     window.setFramerateLimit(60);
 
 	sf::Font font;
 	if (!font.loadFromFile("Calibri.ttf")) {
-	
 		std::cerr << "Failed to load font" << std::endl;
 		return 1; 
 	}
 
-	//Text with key designations
+	// Text with key designations
 	sf::Text text("F2 - New Game / Esc - Exit / Arrow Keys - Move Title", font, 20);
 	text.setFillColor(sf::Color::Cyan);
 	text.setPosition(5.f, 5.f);
@@ -45,7 +44,7 @@ sf::RenderWindow window(sf::VideoMode(600, 600), "Project");
 				}
 			}
 		}
-		//If the move count is greater than zero, continue to shuffle the puzzle
+		// If the move count is greater than zero, continue to shuffle the puzzle
 		if (move_counter-- > 0) game.Move((Direction)(rand() % 4));
 
 		// Performing the necessary drawing actions

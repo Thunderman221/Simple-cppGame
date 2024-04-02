@@ -48,7 +48,7 @@ void Game::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	states.transform *= getTransform();
 	sf::Color color = sf::Color(200, 100, 200);
 
-	//Drawing of the playing field frame
+	// Drawing of the playing field frame
 	sf::RectangleShape shape(sf::Vector2f(FIELD_SIZE, FIELD_SIZE));
 	shape.setOutlineThickness(2.f);
 	shape.setOutlineColor(color);
